@@ -57,6 +57,40 @@
     .strip-inner b{color:#e0c27c;font-weight:600}
     @media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:65px;gap:35px}.visual{min-height:340px}.browser{max-width:570px}.float-card{right:0}nav{gap:15px}}
     @media(max-width:650px){.nav-wrap{padding:16px 5%}.menu-toggle{display:block}nav{display:none;position:absolute;top:70px;left:0;right:0;background:#0d1420;padding:20px 5%;border-bottom:1px solid #263246;flex-direction:column;align-items:stretch;gap:18px}nav.open{display:flex}.nav-cta{width:100%}.hero{padding:55px 5% 65px;min-height:auto}h1{letter-spacing:-1.8px}.intro{font-size:1rem}.visual{min-height:285px}.mock-site{padding:18px;min-height:260px}.mock-content{margin-top:30px}.mock-title{font-size:19px}.mock-art{height:120px}.float-card{right:-3px;bottom:5px;padding:10px 12px}.strip-inner{padding:20px 5%;gap:12px;flex-direction:column}}
+
+    .content-section{max-width:1160px;margin:auto;padding:82px 5.5%}
+    .section-heading{max-width:680px;margin-bottom:34px}
+    .section-kicker{color:var(--blue);font-size:.74rem;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+    .section-heading h2{font:800 clamp(2rem,4vw,3rem)/1.15 Manrope,sans-serif;letter-spacing:-1.5px;margin:12px 0;color:var(--white)}
+    .section-heading p{color:var(--muted);line-height:1.75;margin:0}
+    .service-grid,.pricing-grid,.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .info-card,.price-card,.portfolio-card{background:linear-gradient(145deg,#121c2b,#0d1420);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:25px}
+    .info-card h3,.portfolio-card h3{font:700 1.08rem Manrope,sans-serif;margin:0 0 10px}
+    .info-card p,.portfolio-card p{color:var(--muted);font-size:.92rem;line-height:1.7;margin:0}
+    .card-number{color:var(--gold);font:700 .8rem Manrope,sans-serif;letter-spacing:1px;margin-bottom:17px}
+    .pricing-section{background:#0c111b;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+    .price-card{display:flex;flex-direction:column;position:relative}
+    .price-card.featured{border-color:rgba(217,181,104,.65);box-shadow:0 12px 40px rgba(217,181,104,.08)}
+    .price-card .plan{color:var(--gold);font-size:.75rem;font-weight:700;letter-spacing:1.6px;text-transform:uppercase}
+    .price-card h3{font:800 1.25rem Manrope,sans-serif;margin:12px 0 5px}
+    .price{font:800 2.2rem Manrope,sans-serif;color:var(--white);margin:5px 0}
+    .price small{font:500 .82rem "DM Sans",sans-serif;color:var(--muted)}
+    .price-card p{color:var(--muted);font-size:.9rem;line-height:1.6;min-height:48px}
+    .price-card ul{list-style:none;padding:0;margin:12px 0 24px;display:grid;gap:11px;color:#d7deea;font-size:.88rem}
+    .price-card li:before{content:"✓";color:var(--gold);font-weight:800;margin-right:9px}
+    .price-btn{margin-top:auto;text-align:center;border:1px solid rgba(217,181,104,.55);border-radius:7px;padding:12px;color:var(--gold);font-weight:700}
+    .price-card.featured .price-btn{background:linear-gradient(110deg,#e4c77f,#bd9140);color:#10131a;border:0}
+    .price-note{color:#8996a9;font-size:.8rem;line-height:1.6;margin-top:22px}
+    .portfolio-preview{height:145px;border-radius:8px;margin-bottom:19px;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;font:800 1.25rem Manrope,sans-serif;letter-spacing:-.5px}
+    .preview-food{background:linear-gradient(135deg,#38231d,#a85e32 55%,#e1b66a);color:#fff4e7}
+    .preview-beauty{background:linear-gradient(135deg,#302238,#946b91 55%,#e3c7d9);color:#fff}
+    .preview-trade{background:linear-gradient(135deg,#142a35,#28738a 55%,#b6d4d1);color:#f4ffff}
+    .contact-panel{background:linear-gradient(120deg,rgba(217,181,104,.14),rgba(49,119,207,.12));border:1px solid rgba(217,181,104,.25);border-radius:14px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .contact-panel h2{font:800 clamp(1.7rem,3vw,2.4rem)/1.2 Manrope,sans-serif;margin:0 0 10px}
+    .contact-panel p{color:var(--muted);margin:0;line-height:1.7}
+    .site-footer{border-top:1px solid rgba(255,255,255,.08);padding:25px 5.5%;color:#8793a6;text-align:center;font-size:.82rem}
+    @media(max-width:850px){.service-grid,.pricing-grid,.portfolio-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:650px){.content-section{padding:62px 5%}.service-grid,.pricing-grid,.portfolio-grid{grid-template-columns:1fr}.contact-panel{align-items:flex-start;flex-direction:column;padding:25px}.price-card p{min-height:0}}
   </style>
 </head>
 <body>
@@ -101,9 +135,42 @@
       </div>
     </section>
     <section class="section-strip" id="about"><div class="strip-inner"><span><b>01</b> &nbsp; Professional website design</span><span><b>02</b> &nbsp; Mobile-friendly experiences</span><span><b>03</b> &nbsp; Built around your business</span></div></section>
-    <div id="services"></div><div id="portfolio"></div><div id="contact"></div>
+
+    <section class="content-section" id="services">
+      <div class="section-heading"><div class="section-kicker">What we do</div><h2>Digital solutions built around your business.</h2><p>Whether you're starting out or ready to grow, we create clear, useful online experiences that help customers understand what you offer and how to reach you.</p></div>
+      <div class="service-grid">
+        <article class="info-card"><div class="card-number">01 / WEBSITE DESIGN</div><h3>Professional websites</h3><p>Clean, modern websites that introduce your business, showcase your services and build trust with potential customers.</p></article>
+        <article class="info-card"><div class="card-number">02 / MOBILE EXPERIENCE</div><h3>Mobile-friendly design</h3><p>Responsive layouts designed to look and work well on phones, tablets and desktop screens.</p></article>
+        <article class="info-card"><div class="card-number">03 / CUSTOMER CONNECTION</div><h3>Contact and enquiries</h3><p>Make it easier for customers to find your details, explore your offer and get in touch with your business.</p></article>
+      </div>
+    </section>
+    <section class="pricing-section" id="pricing">
+      <div class="content-section">
+        <div class="section-heading"><div class="section-kicker">Simple starting prices</div><h2>The right website for your next step.</h2><p>Choose a starting point. Your final quotation depends on the pages, content and features your project needs.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card"><div class="plan">Get started</div><h3>Starter Website</h3><div class="price">R600 <small>from</small></div><p>A simple online home for a small business that is ready to be seen.</p><ul><li>One-page website</li><li>Business information</li><li>Products or services showcase</li><li>Mobile-friendly layout</li><li>Contact section</li><li>Eligible free hosting subdomain</li></ul><a class="price-btn" href="#contact">Enquire about Starter</a></article>
+          <article class="price-card featured"><div class="plan">Grow your presence</div><h3>Business Website</h3><div class="price">R1,200 <small>from</small></div><p>More room to explain your business and present what you offer.</p><ul><li>Up to 5 pages or sections</li><li>Professional custom design</li><li>Products and services display</li><li>Mobile-friendly layout</li><li>Contact and location details</li><li>Eligible free hosting subdomain</li></ul><a class="price-btn" href="#contact">Enquire about Business</a></article>
+          <article class="price-card"><div class="plan">Stand out</div><h3>Premium Website</h3><div class="price">R2,500 <small>from</small></div><p>A more comprehensive website for businesses with broader needs.</p><ul><li>Up to 8 pages</li><li>Premium visual design</li><li>Expanded business presentation</li><li>Mobile optimisation</li><li>Contact integrations</li><li>Custom features quoted separately</li></ul><a class="price-btn" href="#contact">Enquire about Premium</a></article>
+        </div>
+        <p class="price-note">All prices are starting prices, not fixed quotes. Custom domains, domain registration, paid hosting, renewals, copywriting and additional functionality are quoted separately where applicable. Project scope and delivery time are confirmed before work begins.</p>
+      </div>
+    </section>
+    <section class="content-section" id="portfolio">
+      <div class="section-heading"><div class="section-kicker">Ideas in action</div><h2>Website concepts for businesses like yours.</h2><p>These are sample design directions showing the kinds of businesses we can help. They are concepts, not completed client projects.</p></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card"><div class="portfolio-preview preview-food">GOOD FOOD.<br>GOOD MOMENTS.</div><h3>Restaurant website concept</h3><p>A menu-focused layout with clear ordering and contact information.</p></article>
+        <article class="portfolio-card"><div class="portfolio-preview preview-beauty">YOUR STYLE.<br>YOUR CONFIDENCE.</div><h3>Beauty and salon concept</h3><p>A polished presentation for services, prices, opening times and enquiries.</p></article>
+        <article class="portfolio-card"><div class="portfolio-preview preview-trade">BUILT ON<br>GOOD WORK.</div><h3>Services business concept</h3><p>A practical layout for explaining services, service areas and ways to request a quote.</p></article>
+      </div>
+    </section>
+    <section class="content-section" id="contact">
+      <div class="contact-panel"><div><div class="section-kicker">Let's build your presence</div><h2>Ready to take your business online?</h2><p>Tell us what your business does and what you'd like your website to achieve. We'll help you choose the right starting package and prepare a clear quotation.</p></div><a class="primary-btn" href="mailto:">REQUEST A QUOTE&nbsp; ↗</a></div>
+    </section>
+    <footer class="site-footer">© <span id="year"></span> QzzCity Digital. Thoughtful design. Practical digital solutions.</footer>
+
   </main>
   <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
     document.querySelectorAll('nav a').forEach(link=>link.addEventListener('click',()=>{document.querySelector('nav').classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false')}));
   </script>
 </body>
